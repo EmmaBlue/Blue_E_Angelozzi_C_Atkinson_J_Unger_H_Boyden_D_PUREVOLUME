@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218 154">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0.89;
+      }
+
+      .cls-2 {
+        font-size: 127px;
+        fill: #b308ed;
+        font-family: Raleway-Heavy, Raleway;
+        letter-spacing: 0.06em;
+      }
+
+      .cls-3 {
+        fill: #7c0ce8;
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="PUREVOLUME_project">
+      <g id="short_NEW_PV_LOGO_onBlack">
+        <rect id="bckgrd" class="cls-1" width="218" height="154"/>
+        <text class="cls-2" transform="translate(27.9 121.19)">P<tspan class="cls-3" x="86.11" y="0">V</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

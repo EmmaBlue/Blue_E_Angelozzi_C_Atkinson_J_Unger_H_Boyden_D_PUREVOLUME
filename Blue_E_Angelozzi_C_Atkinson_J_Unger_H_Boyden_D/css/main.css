@@ -1,0 +1,338 @@
+/* COLORS
+
+grey: #8E8E8E
+orange: #FF6D00
+darkPurple: #7C0CE8
+lightPurple: #B308ED
+
+*/
+
+/* BASIC simple CSS RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* inehrit from Body */
+}
+
+/* Helper Rules */
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Raleway", "Helvetica", sans-serif;
+  background: #000;
+}
+
+/* Font Size to rem */
+
+html {
+  font-size: 62.5%;
+  /* 62.5% of 16px is 10px which is 1rem */
+}
+
+/* FLOATING NAVIGATION TOGGLE BUTTON */
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #fff;
+  height: 6rem;
+  width: 6rem;
+  position: fixed;
+  top: 2rem;
+  left: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 4rem;
+    left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 3rem;
+    left: 3rem;
+  }
+}
+
+.navigation__background {
+  height: 2rem;
+  width: 0.6rem;
+  /* border-radius: 50%; */
+  position: fixed;
+  top: 2rem;
+  left: 9rem;
+  background-image: radial-gradient(#B308ED, #7C0CE8);
+  z-index: 1000;
+  transition: -webkit-transform 0.8s cubic-bezier(0.69, 0, 0.007, 1);
+  transition: transform 0.8s cubic-bezier(0.69, 0, 0.007, 1);
+  transition: transform 0.8s cubic-bezier(0.69, 0, 0.007, 1), -webkit-transform 0.8s cubic-bezier(0.69, 0, 0.007, 1);
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+}
+
+.navigation__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  transition: all 0.8s cubic-bezier(0.69, -0.55, 0.265, 1.55);
+  opacity: 0;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-90%, -70%);
+  transform: translate(-90%, -70%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 230%;
+  transition: all 0.4s;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  background-position: 100%;
+  color: #000;
+  -webkit-transform: translateX(1rem);
+  transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked~.navigation__background {
+  -webkit-transform: scale(80);
+  transform: scale(80);
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 3em;
+  height: 2px;
+  background-color: #333;
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.navigation__icon::before {
+  top: -0.8rem;
+}
+
+.navigation__icon::after {
+  top: 0.8rem;
+}
+
+.navigation__button:hover .navigation__icon:before {
+  top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon:after {
+  top: 1rem;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+/* FLOATING NAVIGATION TOGGLE end */
+
+/* HEADER Social Icons  */
+
+#social {
+  margin-top: 60rem;
+  margin-left: 5rem;
+}
+
+#social li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 2.4rem;
+}
+
+#social li a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.fa-twitter:hover {
+  color: deepskyblue;
+}
+
+.fa-instagram:hover {
+  color: rgb(236, 156, 8);
+}
+
+.fa-facebook-square:hover {
+  color: dodgerblue;
+}
+
+/* HEADER Social Icons  end */
+
+/* INTRO PAGE */
+
+#introPage {
+  height: 100vh;
+}
+
+/* INTRO PAGE end*/
+
+/* Background Video */
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.45;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; //! OBJECT FIT property to fit the video to the element
+}
+
+/* Background Video end*/
+
+/* Animated Heading */
+
+#PV_animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 20rem;
+  left: 0px;
+  margin: auto;
+  background: transparent;
+  width: 80%;
+  height: 25%;
+}
+
+.purevolume {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+  stroke: purple;
+  animation: pure 4.9s;
+  animation-iteration-count: infinite;
+  /*   animation-direction: alternate; */
+  animation-timing-function: ease-in-out;
+}
+
+.cls-1 {
+  isolation: isolate;
+}
+
+.cls-2 {
+  fill: #b308ed;
+}
+
+.cls-3 {
+  fill: transparent;
+  animation: pure 4.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.cls-4 {
+  fill: #7c0ce8;
+}
+
+@keyframes pure {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: purple;
+    fill: #8e8e8e;
+  }
+}
+
+/* Animated Heading end */
