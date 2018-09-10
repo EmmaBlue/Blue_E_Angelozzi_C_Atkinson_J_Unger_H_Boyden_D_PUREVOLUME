@@ -26,7 +26,7 @@ lightPurple: #B308ED
 
 body {
   font-family: "Raleway", "Helvetica", sans-serif;
-  background: #310026;
+  background: #333333;
 }
 
 /* Font Size to rem */
@@ -353,9 +353,12 @@ html {
 
 
 /* ORIGINS CSS */
-.title{
+
+
+#mainContainer h1{
   color: white;
   text-align: center;
+  font-family: Raleway;
   font-size: 8em;
   padding-bottom: 2rem;
 }
@@ -363,10 +366,11 @@ html {
 .timeline{
   margin: 0 auto;
   height: 640px;
-  width: 80%;
-  background-color: purple;
+  width: 100%;
+  /* background-color: #7C0CE8; */
+  background-color: #333;
   /* border: 15px solid #450145; */
-  box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+  /* box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75); */
   position: relative;
   overflow-x: scroll;
 }
@@ -387,15 +391,15 @@ html {
   top: 47.5%;
   height: 20px;
   width: 20px;
-  background-color: purple;
+  background-color: orange;
   border-radius: 50px;
   border: 10px solid orange;
 }
 
 .circle:hover{
-  background-color: orange;
+  background-color: #333333;
   transform: scale(1.2,1.2);
-  transition: linear 0.05s;
+  transition: ease-out 0.5s;
 }
 
 #circle1{
@@ -463,8 +467,18 @@ html {
   width: 150px;
   display: inline-block;
   background-color: white;
-  border: 8px solid white;
+  /* border: 8px solid white; */
   border-radius: 8px;
+}
+
+.time-desc img{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.time-desc:hover{
+  transform: scale(1.2,1.2);
+  transition: ease-out 0.5s;
 }
 
 .time-desc .title{
@@ -548,7 +562,7 @@ html {
 #circle12:hover ~ #box12,
 #circle13:hover ~ #box13{
   transform: scale(1.2, 1.2);
-  transition: linear 0.05s;
+  transition: ease-out 0.5s;
 }
 
 
@@ -564,7 +578,7 @@ html {
   padding: 20px;
   width: 75%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 18px;
 }
 
@@ -572,7 +586,7 @@ html {
   display: inline-block;
   max-width: 400px;
   min-width: 150px;
-  background-color: purple;
+  background-color: #7C0CE8;
   overflow: hidden;
 }
 
@@ -587,7 +601,7 @@ html {
 .scrollbar::-webkit-scrollbar
 {
 	width: 10px;
-	background-color: purple;
+	background-color: #7C0CE8;
 }
 
 .scrollbar::-webkit-scrollbar-thumb
