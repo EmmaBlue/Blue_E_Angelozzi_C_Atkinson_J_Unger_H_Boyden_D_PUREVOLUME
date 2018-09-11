@@ -2,19 +2,18 @@
   console.log("Welcome to PureVolume website.");
 
   //! VARIABLES
-  const bckgrdVideo = document.querySelector('.bg-video__content');
-  const videoScreen = document.querySelector('.videoScreen');
-  const closeLightbox = videoScreen.querySelector('.close-videoScreen');
-  const vidPlayer = document.querySelector('#videoElement');
-  const playPause = document.querySelector('.play-pause');
-  const rWnd = document.querySelector('.rewindToStart');
-  const ffWd = document.querySelector('.forward');
-  const clipBar = document.querySelector('#clipBar');
-  const clipTiming = document.querySelector('#clipTiming');
-  const muteBtn = document.querySelector('#muteBtn');
-  const volumeBar = document.querySelector('#volumeBar');
-  const playBtn = document.querySelector('#playBtn');
-  const scrollMouseIcon = document.querySelector('.scroll-downs');
+  const bckgrdVideo = document.querySelector('.bg-video__content'),
+  videoScreen = document.querySelector('.videoScreen'), 
+  closeLightbox = videoScreen.querySelector('.close-videoScreen'),
+  vidPlayer = document.querySelector('#videoElement'),
+  playPause = document.querySelector('.play-pause'),
+  rWnd = document.querySelector('.rewindToStart'),
+  clipBar = document.querySelector('#clipBar'),
+  clipTiming = document.querySelector('#clipTiming'),
+  muteBtn = document.querySelector('#muteBtn'),
+  volumeBar = document.querySelector('#volumeBar'),
+  playBtn = document.querySelector('#playBtn'),
+  scrollMouseIcon = document.querySelector('.scroll-downs');
 
   //! FUNCTIONS
 
