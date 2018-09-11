@@ -120,16 +120,16 @@
       // slider value
       let sliderValue = (100 / vidPlayer.duration) * vidPlayer.currentTime;
       clipBar.value = sliderValue;
-    })
+    });
 
     // pause video when moving slider
     clipBar.addEventListener('mousedown', () => {
       vidPlayer.pause();
-    })
+    });
     // play back video when mouseup after slider move
     clipBar.addEventListener('mouseup', () => {
       vidPlayer.play();
-    })
+    });
   }
 
   // MUTE VIDEOCLIP

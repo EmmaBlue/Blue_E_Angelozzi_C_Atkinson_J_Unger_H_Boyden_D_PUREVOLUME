@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -36,13 +36,15 @@
             <li class="navigation__item"><a href="origins.html" class="navigation__link">Origins</a></li>
             <li class="navigation__item"><a href="#" class="navigation__link">Events</a></li>
             <li class="navigation__item"><a href="#" class="navigation__link">Store</a></li>
+            <li>
             <ul id="social">
               <li><i class="fas fa-search" style="color: white;"></i></li>
-              <li><a href="http://www.youtube.com" target="_blank" id="yt"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="http://www.twitter.com" target="_blank" id="tw"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="http://www.instagram.com" target="_blank" id="pt"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="http://www.facebook.com" target="_blank" id="fb"><i class="fab fa-facebook-square"></i></a></li>
-            </ul>
+            <li><a href="http://www.youtube.com" target="_blank" id="yt"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="http://www.twitter.com" target="_blank" id="tw"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="http://www.instagram.com" target="_blank" id="pt"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://www.facebook.com" target="_blank" id="fb"><i class="fab fa-facebook-square"></i></a></li>
+          </ul>
+          </li>
           </ul>
         </nav>
       </div>
@@ -55,10 +57,7 @@
       <!-- Video Background -->
       <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
-          <!-- <source src="video/heroVideo_homepage/cheerUp.mp4" type="video/mp4">
-          <source src="video/heroVideo_homepage/cheerUp.ogv" type="video/ogv">
-          <source src="video/heroVideo_homepage/cheerUp.webm" type="video/webm"> -->
-          <!-- Your browser is not supported, update it! -->
+          <!-- <source> element added dinamically through JS file, based on screen-size -->
         </video>
       </div>
 
@@ -98,7 +97,7 @@
 
       <!-- Tagline -->
       <div id="tagline">
-        <h1>Discover tomorrow’s legends.</h1>
+        <h2>Discover tomorrow’s legends.</h2>
       </div>
 
       <!-- watch trailer -->
@@ -109,6 +108,7 @@
 
       <!-- Video Player -->
       <section class="videoScreen">
+        <h2 class="hidden">Video Screen</h2>
 
         <span class="close-videoScreen">x</span>
         <!-- add video here with sources for fallback / standards -->
@@ -150,6 +150,7 @@
 
     <!-- CONTENT SECTION -->
     <section id="content_boxes">
+      <h2 class="hidden">Pure Volume Articles</h2>
 
       <a href="#" class="single-article" id="article1">
         <img src="https://picsum.photos/400/731" alt="story image">
