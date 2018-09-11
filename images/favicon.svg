@@ -9,11 +9,11 @@
         font-size: 127px;
         fill: #b308ed;
         font-family: Raleway-Heavy, Raleway;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.09em;
       }
 
       .cls-3 {
-        fill: #7c0ce8;
+        fill: #b308ed;
         letter-spacing: 0.04em;
       }
     </style>
