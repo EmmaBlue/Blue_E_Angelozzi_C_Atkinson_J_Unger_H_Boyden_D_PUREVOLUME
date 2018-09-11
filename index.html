@@ -101,11 +101,43 @@
         <h1>Discover tomorrow’s legends.</h1>
       </div>
 
-      <!-- video player  -->
+      <!-- watch trailer -->
       <div id="discoverUs">
         <p>Watch the trailer</p>
-        <i class="far fa-play-circle"></i>
+        <div id='playBtn'><i class="far fa-play-circle"></i></div>
       </div>
+
+      <!-- Video Player -->
+      <section class="videoScreen">
+
+        <span class="close-videoScreen">x</span>
+        <!-- add video here with sources for fallback / standards -->
+
+        <video id="videoElement">
+          <!-- <source> element added dinamically through JS file, based on screen-size -->
+        </video>
+
+        <div class="controls">
+          <ul>
+            <li class="rewindToStart">
+                  <i class="fas fa-fast-backward"></i>
+                </li>
+            <li class="play-pause">
+                  <i class="fas fa-pause"></i>
+                </li>
+            <li><input type="range" id="clipBar" value="0"></li>
+            <li>
+                  <p id="clipTiming">0:00 / 0:00</p>
+                </li>
+            <li id="muteBtn"><i class="fas fa-volume-up"></i></li>
+            <li><i class="far fa-volume-mute" style="display: none;"></i></li>
+            <li><input type="range" id="volumeBar" value="1" min="0" max="1" step="0.1"></li>
+          </ul>
+
+        </div>
+
+
+      </section>
 
       <!-- scroll down mouse icon -->
       <div class="scroll-downs">
@@ -119,61 +151,61 @@
     <!-- CONTENT SECTION -->
     <section id="content_boxes">
 
-        <a href="#" class="single-article" id="article1">
-          <img src="https://picsum.photos/400/731" alt="story image">
-          <div class="desc-block">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-          </div>
-        </a>
-
-        <a href="#" class="single-article" id="article2">
-          <img src="https://picsum.photos/400/500" alt="story image">
-          <div class="desc-block">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-          </div>
-        </a>
-
-        <a href="#" class="single-article" id="article3">
-          <img src="https://picsum.photos/400/430" alt="story image">
-          <div class="desc-block">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-          </div>
-        </a>
-
-        <a href="#" class="single-article" id="article4">
-          <img src="https://picsum.photos/400/600" alt="story image">
-          <div class="desc-block">
+      <a href="#" class="single-article" id="article1">
+        <img src="https://picsum.photos/400/731" alt="story image">
+        <div class="desc-block">
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
         </div>
-        </a>
+      </a>
 
-        <a href="#" class="single-article" id="article5">
-          <img src="https://picsum.photos/400/550" alt="story image">
-          <div class="desc-block">
+      <a href="#" class="single-article" id="article2">
+        <img src="https://picsum.photos/400/500" alt="story image">
+        <div class="desc-block">
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-          </div>
-        </a>
+        </div>
+      </a>
 
-        <a href="#" class="single-article" id="article6">
-          <img src="https://picsum.photos/401/650" alt="story image">
-          <div class="desc-block">
+      <a href="#" class="single-article" id="article3">
+        <img src="https://picsum.photos/400/430" alt="story image">
+        <div class="desc-block">
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-          </div>
-        </a>
+        </div>
+      </a>
 
-        <a href="#" class="single-article" id="article7">
-          <img src="https://picsum.photos/410/445" alt="story image">
-          <div class="desc-block">
+      <a href="#" class="single-article" id="article4">
+        <img src="https://picsum.photos/400/600" alt="story image">
+        <div class="desc-block">
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-          </div>
-        </a>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article5">
+        <img src="https://picsum.photos/400/550" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article6">
+        <img src="https://picsum.photos/401/650" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article7">
+        <img src="https://picsum.photos/410/445" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
 
     </section>
 
