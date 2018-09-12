@@ -160,7 +160,7 @@
     // onLoad eent on scroll for fade effect on landing page
     window.addEventListener('scroll', () => {
       let intro = document.querySelector("#introPage");
-      intro.style.opacity = 1 - (1 / (window.innerHeight / window.scrollY));
+      intro.style.opacity = 2 - (1 / (window.innerHeight / window.scrollY));
     });
 
 
