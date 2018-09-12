@@ -422,7 +422,7 @@ html {
   margin-top: 5rem;
   display: grid;
   grid-gap: 20px;
-  grid-auto-columns: minmax(50px 1fr);
+  grid-auto-columns: minmax(50px, 1fr);
   grid-auto-rows: 250px;
   padding: 0 0 5rem 0;
 }
@@ -539,7 +539,7 @@ html {
     margin: 5rem 10rem auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3 minmax(150px, auto));
+    grid-template-columns: repeat(3, minmax(150px, auto));
     grid-auto-rows: 250px;
   }
   .single-article {
@@ -1200,7 +1200,7 @@ input[type=range]:focus {
     margin: 20rem auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3 minmax(150px, auto));
+    grid-template-columns: repeat(3, minmax(150px, auto));
     grid-auto-rows: 250px;
   }
   .single-article {
