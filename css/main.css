@@ -635,7 +635,7 @@ html {
   max-width: 200px;
   display: block;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px 20px 0 20px;
 }
 
 .title {
