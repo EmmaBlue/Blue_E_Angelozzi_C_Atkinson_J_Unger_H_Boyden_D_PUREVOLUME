@@ -11,211 +11,221 @@
 
 <body>
   <main id="originsContainer">
-    <img id="logo" src="./images/PV_logo.svg" alt="logo">
+    <a href="index.html"><img id="logo" src="./images/PV_logo.svg" alt="logo"></a>
     <h1 class="title">Origins</h1>
 
-    <!-- FLOATING NAVIGATION TOGGLE BUTTON -->
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">Artists</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Origins</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Events</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Store</a></li>
+    <!-- HEADER -->
+    <header id="mainHeader">
+      <h2 class="hidden">Main Header</h2>
+      <!-- FLOATING NAVIGATION TOGGLE BUTTON -->
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <h2 class="hidden">Main Navigation</h2>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">Artists</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
+            <li class="navigation__item"><a href="origins.html" class="navigation__link">Origins</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Events</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Store</a></li>
+            <li>
+              <ul id="social">
+                <li><i class="fas fa-search" style="color: white;"></i></li>
+                <li><a href="http://www.youtube.com" target="_blank" id="yt"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="http://www.twitter.com" target="_blank" id="tw"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://www.instagram.com" target="_blank" id="pt"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://www.facebook.com" target="_blank" id="fb"><i class="fab fa-facebook-square"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="timeline scrollbar">
+      <h2 class="hidden">Time Line</h2>
+
+      <div id="time-line"></div>
+
+      <div class="circle" id="circle1"></div>
+      <div class="circle" id="circle2"></div>
+      <div class="circle" id="circle3"></div>
+      <div class="circle" id="circle4"></div>
+      <div class="circle" id="circle5"></div>
+      <div class="circle" id="circle6"></div>
+      <div class="circle" id="circle7"></div>
+      <div class="circle" id="circle8"></div>
+      <div class="circle" id="circle9"></div>
+      <div class="circle" id="circle10"></div>
+      <div class="circle" id="circle11"></div>
+      <div class="circle" id="circle12"></div>
+      <div class="circle" id="circle13"></div>
+
+      <div class="time-desc" id="box1">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">July 2012</p>
+        <p class="desc">Frank Ocean releases Channel Orange a week early.</p>
+      </div>
+
+      <div class="time-desc" id="box2">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">December 2012</p>
+        <p class="desc">Gangnam Style becomes the 1st Youtube video to reach 1 billion views.</p>
+      </div>
+
+      <div class="time-desc" id="box3">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">January 2013</p>
+        <p class="desc">Bastille releases Pompeii, which peaks at #2 on the UK Singles chart.</p>
+      </div>
+
+      <div class="time-desc" id="box4">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">September 2013</p>
+        <p class="desc">Lorde’s Pure Heroine debuts at #3 on the US Billboard 200 chart.</p>
+      </div>
+
+      <div class="time-desc" id="box5">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">March 2014</p>
+        <p class="desc">Robin Thicke releases Blurred Lines. It peaks at #1 in over 25 countries.</p>
+      </div>
+
+      <div class="time-desc" id="box6">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">December 2014</p>
+        <p class="desc">Spotify names x the most streamed album in the world.</p>
+      </div>
+
+      <div class="time-desc" id="box7">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">August 2015</p>
+        <p class="desc">Here by Alessia Cara debuts at #95 on Billboard’s Hot 100.</p>
+      </div>
+
+      <div class="time-desc" id="box8">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">December 2015</p>
+        <p class="desc">Alabama Shakes’ Sound & Color is nominated for 6 Grammies.</p>
+      </div>
+
+      <div class="time-desc" id="box9">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">July 2016</p>
+        <p class="desc">Drake names Where Did I Go by Jorja Smith his music pick.</p>
+      </div>
+
+      <div class="time-desc" id="box10">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">October 2016</p>
+        <p class="desc">The music video for Closer by The Chainsmokers comes out.</p>
+      </div>
+
+      <div class="time-desc" id="box11">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">June 2017</p>
+        <p class="desc">Brock Hampton releases Saturation I to critical acclaim.</p>
+      </div>
+
+      <div class="time-desc" id="box12">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">July 2017</p>
+        <p class="desc">Cardi B becomes the 5th female rapper ever to top Billboard Hot 100.</p>
+      </div>
+
+      <div class="time-desc" id="box13">
+        <img src="https://picsum.photos/200/100" alt="photo">
+        <p class="title">March 2018</p>
+        <p class="desc">Superorganism releases its self-titled album a year after forming.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section id="content_boxes">
+      <h2 class="hidden">Latest Articles</h2>
+
+      <a href="#" class="single-article" id="article1">
+        <img src="https://picsum.photos/400/731" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article2">
+        <img src="https://picsum.photos/400/500" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article3">
+        <img src="https://picsum.photos/400/430" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article4">
+        <img src="https://picsum.photos/400/600" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article5">
+        <img src="https://picsum.photos/400/550" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+      <a href="#" class="single-article ad" id="article6">
+        <img src="https://picsum.photos/401/650" alt="story image">
+        <div class="desc-block">
+          <h3>AD</h3>
+        </div>
+      </a>
+
+      <a href="#" class="single-article" id="article7">
+        <img src="https://picsum.photos/410/445" alt="story image">
+        <div class="desc-block">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
+        </div>
+      </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+      <div id="footer_img">
+        <img src="images/PV_logo.svg" alt="footer logo" id="footerLogo">
+      </div>
+
+      <div id="footer_navigation">
+        <ul class="footer_list">
+          <li class="footer_item"><a href="#">about</a></li>
+          <li class="footer_item"><a href="#">contact</a></li>
+          <li class="footer_item"><a href="#">copyright</a></li>
+          <li class="footer_item"><a href="#">privacy</a></li>
+          <li class="footer_item"><a href="#">terms</a></li>
         </ul>
-        <ul id="social">
-          <li><i class="fas fa-search" style="color: white;"></i></li>
-          <li><a href="http://www.youtube.com" target="_blank" id="yt"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="http://www.twitter.com" target="_blank" id="tw"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="http://www.instagram.com" target="_blank" id="pt"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="http://www.facebook.com" target="_blank" id="fb"><i class="fab fa-facebook-square"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-
-<section class="timeline scrollbar">
-  <div id="time-line"></div>
-
-  <div class="circle" id="circle1"></div>
-  <div class="circle" id="circle2"></div>
-  <div class="circle" id="circle3"></div>
-  <div class="circle" id="circle4"></div>
-  <div class="circle" id="circle5"></div>
-  <div class="circle" id="circle6"></div>
-  <div class="circle" id="circle7"></div>
-  <div class="circle" id="circle8"></div>
-  <div class="circle" id="circle9"></div>
-  <div class="circle" id="circle10"></div>
-  <div class="circle" id="circle11"></div>
-  <div class="circle" id="circle12"></div>
-  <div class="circle" id="circle13"></div>
-
-  <div class="time-desc" id="box1">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">July 2012</p>
-    <p class="desc">Frank Ocean releases Channel Orange a week early.</p>
-  </div>
-
-  <div class="time-desc" id="box2">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">December 2012</p>
-    <p class="desc">Gangnam Style becomes the 1st Youtube video to reach 1 billion views.</p>
-  </div>
-
-  <div class="time-desc" id="box3">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">January 2013</p>
-    <p class="desc">Bastille releases Pompeii, which peaks at #2 on the UK Singles chart.</p>
-  </div>
-
-  <div class="time-desc" id="box4">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">September 2013</p>
-    <p class="desc">Lorde’s Pure Heroine debuts at #3 on the US Billboard 200 chart.</p>
-  </div>
-
-  <div class="time-desc" id="box5">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">March 2014</p>
-    <p class="desc">Robin Thicke releases Blurred Lines. It peaks at #1 in over 25 countries.</p>
-  </div>
-
-  <div class="time-desc" id="box6">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">December 2014</p>
-    <p class="desc">Spotify names x the most streamed album in the world.</p>
-  </div>
-
-  <div class="time-desc" id="box7">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">August 2015</p>
-    <p class="desc">Here by Alessia Cara debuts at #95 on Billboard’s Hot 100.</p>
-  </div>
-
-  <div class="time-desc" id="box8">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">December 2015</p>
-    <p class="desc">Alabama Shakes’ Sound & Color is nominated for 6 Grammies.</p>
-  </div>
-
-  <div class="time-desc" id="box9">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">July 2016</p>
-    <p class="desc">Drake names Where Did I Go by Jorja Smith his music pick.</p>
-  </div>
-
-  <div class="time-desc" id="box10">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">October 2016</p>
-    <p class="desc">The music video for Closer by The Chainsmokers comes out.</p>
-  </div>
-
-  <div class="time-desc" id="box11">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">June 2017</p>
-    <p class="desc">Brock Hampton releases Saturation I to critical acclaim.</p>
-  </div>
-
-  <div class="time-desc" id="box12">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">July 2017</p>
-    <p class="desc">Cardi B becomes the 5th female rapper ever to top Billboard Hot 100.</p>
-  </div>
-
-  <div class="time-desc" id="box13">
-    <img src="https://picsum.photos/200/100" alt="photo">
-    <p class="title">March 2018</p>
-    <p class="desc">Superorganism releases its self-titled album a year after forming.</p>
-  </div>
-</section>
-
-<!-- CONTENT SECTION -->
-<section id="content_boxes">
-
-    <a href="#" class="single-article" id="article1">
-      <img src="https://picsum.photos/400/731" alt="story image">
-      <div class="desc-block">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
       </div>
-    </a>
 
-    <a href="#" class="single-article" id="article2">
-      <img src="https://picsum.photos/400/500" alt="story image">
-      <div class="desc-block">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-      </div>
-    </a>
+    </footer>
 
-    <a href="#" class="single-article" id="article3">
-      <img src="https://picsum.photos/400/430" alt="story image">
-      <div class="desc-block">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-      </div>
-    </a>
-
-    <a href="#" class="single-article" id="article4">
-      <img src="https://picsum.photos/400/600" alt="story image">
-      <div class="desc-block">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-    </div>
-    </a>
-
-    <a href="#" class="single-article" id="article5">
-      <img src="https://picsum.photos/400/550" alt="story image">
-      <div class="desc-block">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-      </div>
-    </a>
-
-    <a href="#" class="single-article ad" id="article6">
-      <img src="https://picsum.photos/401/650" alt="story image">
-      <div class="desc-block">
-      <h3>AD</h3>
-      </div>
-    </a>
-
-    <a href="#" class="single-article" id="article7">
-      <img src="https://picsum.photos/410/445" alt="story image">
-      <div class="desc-block">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor vel nunc non blandit.</p>
-      </div>
-    </a>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer id="footer">
-
-  <div id="footer_img">
-    <img src="images/PV_logo.svg" alt="footer logo" id="footerLogo">
-  </div>
-
-  <div id="footer_navigation">
-    <ul class="footer_list">
-      <li class="footer_item"><a href="#">about</a></li>
-      <li class="footer_item"><a href="#">contact</a></li>
-      <li class="footer_item"><a href="#">copyright</a></li>
-      <li class="footer_item"><a href="#">privacy</a></li>
-      <li class="footer_item"><a href="#">terms</a></li>
-    </ul>
-  </div>
-
-</footer>
-
-</main>
+  </main>
   <script src="./js/app.js"></script>
 </body>
 
