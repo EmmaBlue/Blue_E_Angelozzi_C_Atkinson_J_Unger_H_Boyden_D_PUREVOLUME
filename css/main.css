@@ -423,6 +423,27 @@ html {
   }
 }
 
+/* Separator */
+
+#separator {
+  width: 100%;
+  color: #8e8e8e;
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sepLines {
+  width: 5rem;
+  border-top: 1px solid #8e8e8e;
+}
+
+#separator p {
+  font-size: 1.4rem;
+  margin-top: -1rem;
+}
+
 /* CONTENT BOXES */
 
 #content_boxes {
@@ -435,6 +456,11 @@ html {
   grid-auto-columns: minmax(50px, 1fr);
   grid-auto-rows: 250px;
   padding: 0 0 5rem 0;
+}
+
+#content_boxes img {
+  width: 100%;
+  margin: auto;
 }
 
 .single-article {
@@ -639,7 +665,7 @@ html {
 /*  --------------------- ORIGINS PAGE --------------------- */
 
 #originsContainer {
-  background-color: rgba(160, 132, 169, 1);
+  background-color: #fff;
 }
 
 #logo {
@@ -1063,6 +1089,31 @@ input[type=range]:focus {
   }
 }
 
+@media screen and (min-width: 300px) and (orientation: landscape) {
+  #PV_animation {
+    margin-top: 8rem;
+  }
+  .videoScreen {
+    width: 40%;
+  }
+  .single-article {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sepLines {
+    width: 10rem;
+  }
+  #discoverUs {
+    margin-bottom: 2rem;
+  }
+  .navigation__nav {
+    top: 22rem;
+  }
+  .navigation__item {
+    margin: 0;
+  }
+}
+
 /* 400px */
 
 @media screen and (min-width: 400px) {
@@ -1093,6 +1144,9 @@ input[type=range]:focus {
   #logo {
     max-width: 400px;
   }
+  .videoScreen {
+    width: 100%;
+  }
 }
 
 /* 900px */
@@ -1113,7 +1167,7 @@ input[type=range]:focus {
 
 @media screen and (min-width: 1000px) {
   .navigation__list {
-    top: 7rem;
+    top: 8rem;
     left: 55%;
   }
   #tagline {
@@ -1130,8 +1184,41 @@ input[type=range]:focus {
   .fa-play-circle {
     font-size: 8rem;
   }
-  #content_boxes {
-    padding: 15rem 0;
+  #separator {
+    padding-top: 5rem;
+  }
+  #separator p {
+    font-size: 2rem;
+  }
+  .navigation__background {
+    left: 6rem;
+  }
+  .scroll-downs {
+    display: none;
+  }
+  .sepLines {
+    width: 40rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (orientation: portrait) {
+  .sepLines {
+    width: 30rem;
+  }
+  #PV_animation {
+    margin-top: 6rem;
+  }
+  #discoverUs {
+    margin-bottom: 18rem;
+  }
+  #tagline {
+    font-size: 2rem;
+  }
+  #separator {
+    padding-top: 5rem;
+  }
+  .navigation__list {
+    top: 14rem;
   }
 }
 
@@ -1147,7 +1234,7 @@ input[type=range]:focus {
     font-size: 3rem;
   }
   .navigation__list {
-    top: 15rem;
+    top: 22rem;
     left: 52%;
   }
   #discoverUs>p {
@@ -1171,6 +1258,12 @@ input[type=range]:focus {
   }
   #volumeBar {
     display: inline-block;
+  }
+  .sepLines {
+    width: 55rem;
+  }
+  #content_boxes {
+    margin-bottom: 8rem;
   }
 }
 
