@@ -157,13 +157,6 @@
   //! EVENTS 
   window.addEventListener('load', () => {
 
-    // onLoad eent on scroll for fade effect on landing page
-    window.addEventListener('scroll', () => {
-      let intro = document.querySelector("#introPage");
-      intro.style.opacity = 2 - (1 / (window.innerHeight / window.scrollY));
-    });
-
-
     // create source video element according to screen size
     if (window.matchMedia("(max-width: 700px)").matches) {
       videoSource(bckgrdVideo, 'video/bg_videos/mobile.m4v', 'video/mp4');
