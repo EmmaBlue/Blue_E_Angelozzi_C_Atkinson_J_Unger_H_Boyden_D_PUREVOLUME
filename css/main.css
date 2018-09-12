@@ -286,7 +286,7 @@ html {
   stroke-dashoffset: 0;
   stroke-width: 2px;
   stroke: purple;
-  animation: pure 4.9s;
+  animation: pure 6.9s;
   animation-iteration-count: 1;
   /*   animation-direction: alternate; */
   animation-timing-function: ease-in-out;
@@ -302,7 +302,7 @@ html {
 
 .cls-3 {
   fill: transparent;
-  animation: pure 4.9s;
+  animation: pure 6.9s;
   animation-iteration-count: 1;
   /* animation-direction: alternate; */
   animation-timing-function: ease-in-out;
