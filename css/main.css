@@ -26,9 +26,9 @@ pastelPurple: rgba(160, 132, 169, 1)
 
 body {
   font-family: "Raleway", "Helvetica", sans-serif;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 42%, rgba(160, 132, 169, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 42%, rgba(160, 132, 169, 1) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 42%, rgba(160, 132, 169, 1) 100%);
+  /* background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 100%); */
 }
 
 /* Font Size to rem */
@@ -56,6 +56,7 @@ html {
   /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); */
   text-align: center;
   cursor: pointer;
+  border: 1px solid #333;
 }
 
 .navigation__background {
@@ -238,6 +239,7 @@ html {
   align-content: center;
   justify-content: center;
   justify-items: center;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* INTRO PAGE end*/
@@ -285,7 +287,7 @@ html {
   stroke-width: 2px;
   stroke: purple;
   animation: pure 4.9s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   /*   animation-direction: alternate; */
   animation-timing-function: ease-in-out;
 }
@@ -301,9 +303,18 @@ html {
 .cls-3 {
   fill: transparent;
   animation: pure 4.9s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-iteration-count: 1;
+  /* animation-direction: alternate; */
   animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome 16+, Safari 4+ */
+  -moz-animation-fill-mode: forwards;
+  /* FF 5+ */
+  -o-animation-fill-mode: forwards;
+  /* Not implemented yet */
+  -ms-animation-fill-mode: forwards;
+  /* IE 10+ */
+  animation-fill-mode: forwards;
 }
 
 .cls-4 {
@@ -412,7 +423,6 @@ html {
   }
 }
 
-
 /* CONTENT BOXES */
 
 #content_boxes {
@@ -434,7 +444,7 @@ html {
   position: relative;
 }
 
-.ad{
+.ad {
   box-shadow: 0px 0px 37px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -602,7 +612,7 @@ html {
 }
 
 #footer_navigation {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #8e8e8e;
   padding-top: 2rem;
   display: inline-block;
 }
@@ -627,11 +637,12 @@ html {
 /* FOOTER end*/
 
 /*  --------------------- ORIGINS PAGE --------------------- */
-#originsContainer{
+
+#originsContainer {
   background-color: rgba(160, 132, 169, 1);
 }
 
-#logo{
+#logo {
   max-width: 200px;
   display: block;
   margin: 0 auto;
@@ -1045,8 +1056,9 @@ input[type=range]:focus {
 /* ----------- ------ ----------- */
 
 /* 300p */
+
 @media screen and (min-width: 300px) {
-  #logo{
+  #logo {
     max-width: 250px;
   }
 }
@@ -1054,7 +1066,7 @@ input[type=range]:focus {
 /* 400px */
 
 @media screen and (min-width: 400px) {
-  #logo{
+  #logo {
     max-width: 300px;
   }
 }
@@ -1071,15 +1083,14 @@ input[type=range]:focus {
     left: 60%;
   }
   .navigation__button {
-    left: 4rem;
+    left: 2rem;
   }
   #clipBar,
   #clipTiming,
   #muteBtn {
     display: inline-block;
   }
-
-  #logo{
+  #logo {
     max-width: 400px;
   }
 }
@@ -1090,11 +1101,9 @@ input[type=range]:focus {
   .navigation__background {
     left: 9rem;
   }
-
-  #logo{
+  #logo {
     max-width: 600px;
   }
-
   .title {
     font-size: 8em;
   }
