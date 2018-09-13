@@ -728,7 +728,6 @@ html {
   padding: 4rem 0;
   background-color: rgba(160, 132, 169, 1);
   color: #fff;
-
 }
 
 .close-imageScreen {
@@ -746,19 +745,18 @@ html {
   display: block !important;
 }
 
-.imageScreen img{
+.imageScreen img {
   padding-top: 20rem;
   max-width: 95%;
   z-index: 20;
 }
 
-.imageScreen .title{
+.imageScreen .title {
   font-size: 4em;
 }
 
-.imageScreen .desc{
+.imageScreen .desc {
   font-size: 2em;
-
 }
 
 .scrollbar::-webkit-scrollbar-track {
@@ -777,265 +775,498 @@ html {
   background-color: #7C0CE8;
 }
 
+#circle1 {
+  left: 40%;
+}
 
-#circle1 { left: 40%; }
-#box1 { left: 15%;}
+#box1 {
+  left: 15%;
+}
 
-#circle2 { left: 60%; }
-#box2{left: 30%;}
+#circle2 {
+  left: 60%;
+}
 
-#circle3 { left: 80%; }
-#box3{left: 45%;}
+#box2 {
+  left: 30%;
+}
 
-#circle4 { left: 100%; }
-#box4{left: 60%;}
+#circle3 {
+  left: 80%;
+}
 
-#circle5 { left: 120%; }
-#box5{left: 75%;}
+#box3 {
+  left: 45%;
+}
 
-#circle6 { left: 140%; }
-#box6{left: 90%;}
+#circle4 {
+  left: 100%;
+}
 
-#circle7 { left: 160%; }
-#box7{left: 120%;}
+#box4 {
+  left: 60%;
+}
 
-#circle8 { left: 180%; }
-#box8{left: 130%;}
+#circle5 {
+  left: 120%;
+}
 
-#circle9 { left: 200%; }
-#box9{left: 179%;}
+#box5 {
+  left: 75%;
+}
 
-#circle10 { left: 220%; }
-#box10{left: 190%;}
+#circle6 {
+  left: 140%;
+}
 
-#circle11 { left: 240%; }
-#box11{left: 220%;}
+#box6 {
+  left: 90%;
+}
 
-#circle12 { left: 260%; }
-#box12{left: 235%;}
+#circle7 {
+  left: 160%;
+}
 
-#circle13 { left: 280%; }
-#box13{left: 255%;}
+#box7 {
+  left: 120%;
+}
 
-#circle14 { left: 300%; }
-#box14{left: 275%;}
+#circle8 {
+  left: 180%;
+}
+
+#box8 {
+  left: 130%;
+}
+
+#circle9 {
+  left: 200%;
+}
+
+#box9 {
+  left: 179%;
+}
+
+#circle10 {
+  left: 220%;
+}
+
+#box10 {
+  left: 190%;
+}
+
+#circle11 {
+  left: 240%;
+}
+
+#box11 {
+  left: 220%;
+}
+
+#circle12 {
+  left: 260%;
+}
+
+#box12 {
+  left: 235%;
+}
+
+#circle13 {
+  left: 280%;
+}
+
+#box13 {
+  left: 255%;
+}
+
+#circle14 {
+  left: 300%;
+}
+
+#box14 {
+  left: 275%;
+}
 
 /*MEDIA QUERIES*/
+
 @media screen and (min-width: 700px) {
-
-  #time-line { width: 170%;}
-
-  #circle1 { left: 20%; }
-  #box1 { left: 5%;}
-
-  #circle2 { left: 30%; }
-  #box2{left: 15%;}
-
-  #circle3 { left: 40%; }
-  #box3{left: 25%;}
-
-  #circle4 { left: 50%; }
-  #box4{left: 35%;}
-
-  #circle5 { left: 60%; }
-  #box5{left: 45%;}
-
-  #circle6 { left: 70%; }
-  #box6{left: 55%;}
-
-  #circle7 { left: 80%; }
-  #box7{left: 65%;}
-
-  #circle8 { left: 90%; }
-  #box8{left: 75%;}
-
-  #circle9 { left: 100%; }
-  #box9{left: 85%;}
-
-  #circle10 { left: 110%; }
-  #box10{left: 95%;}
-
-  #circle11 { left: 120%; }
-  #box11{left: 105%;}
-
-  #circle12 { left: 130%; }
-  #box12{left: 115%;}
-
-  #circle13 { left: 140%; }
-  #box13{left: 125%;}
-
-  #circle14 { left: 150%; }
-  #box14{left: 135%;}
+  #time-line {
+    width: 170%;
+  }
+  #circle1 {
+    left: 20%;
+  }
+  #box1 {
+    left: 5%;
+  }
+  #circle2 {
+    left: 30%;
+  }
+  #box2 {
+    left: 15%;
+  }
+  #circle3 {
+    left: 40%;
+  }
+  #box3 {
+    left: 25%;
+  }
+  #circle4 {
+    left: 50%;
+  }
+  #box4 {
+    left: 35%;
+  }
+  #circle5 {
+    left: 60%;
+  }
+  #box5 {
+    left: 45%;
+  }
+  #circle6 {
+    left: 70%;
+  }
+  #box6 {
+    left: 55%;
+  }
+  #circle7 {
+    left: 80%;
+  }
+  #box7 {
+    left: 65%;
+  }
+  #circle8 {
+    left: 90%;
+  }
+  #box8 {
+    left: 75%;
+  }
+  #circle9 {
+    left: 100%;
+  }
+  #box9 {
+    left: 85%;
+  }
+  #circle10 {
+    left: 110%;
+  }
+  #box10 {
+    left: 95%;
+  }
+  #circle11 {
+    left: 120%;
+  }
+  #box11 {
+    left: 105%;
+  }
+  #circle12 {
+    left: 130%;
+  }
+  #box12 {
+    left: 115%;
+  }
+  #circle13 {
+    left: 140%;
+  }
+  #box13 {
+    left: 125%;
+  }
+  #circle14 {
+    left: 150%;
+  }
+  #box14 {
+    left: 135%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .scrollbar::-webkit-scrollbar-track {
     display: none;
   }
-
   .scrollbar::-webkit-scrollbar {
     display: none;
   }
-
   .scrollbar::-webkit-scrollbar-thumb {
     display: none;
   }
-
-  .imageScreen img{
+  .imageScreen img {
     max-width: 40%;
   }
-
-  #time-line{
+  #time-line {
     width: 100%;
   }
-
-  #circle1 { left: 3%; }
-  #box1 { left: 2%;}
-
-  #circle2 { left: 10%; }
-  #box2{left:4%;}
-
-  #circle3 { left: 17%; }
-  #box3{left: 10%;}
-
-  #circle4 { left: 24%; }
-  #box4{left: 15%;}
-
-  #circle5 { left: 31%; }
-  #box5{left: 20%;}
-
-  #circle6 { left: 38%; }
-  #box6{left: 28%;}
-
-  #circle7 { left: 45%; }
-  #box7{left: 30%;}
-
-  #circle8 { left: 52%; }
-  #box8{left: 40%;}
-
-  #circle9 { left: 59%; }
-  #box9{left: 47%;}
-
-  #circle10 { left: 66%; }
-  #box10{left: 55%;}
-
-  #circle11 { left: 74%; }
-  #box11{left: 55%;}
-
-  #circle12 { left: 80%; }
-  #box12{left: 63%;}
-
-  #circle13 { left: 87%; }
-  #box13{left: 75%;}
-
-  #circle14 { left: 94%; }
-  #box14{left: 74%;}
+  #circle1 {
+    left: 3%;
+  }
+  #box1 {
+    left: 2%;
+  }
+  #circle2 {
+    left: 10%;
+  }
+  #box2 {
+    left: 4%;
+  }
+  #circle3 {
+    left: 17%;
+  }
+  #box3 {
+    left: 10%;
+  }
+  #circle4 {
+    left: 24%;
+  }
+  #box4 {
+    left: 15%;
+  }
+  #circle5 {
+    left: 31%;
+  }
+  #box5 {
+    left: 20%;
+  }
+  #circle6 {
+    left: 38%;
+  }
+  #box6 {
+    left: 28%;
+  }
+  #circle7 {
+    left: 45%;
+  }
+  #box7 {
+    left: 30%;
+  }
+  #circle8 {
+    left: 52%;
+  }
+  #box8 {
+    left: 40%;
+  }
+  #circle9 {
+    left: 59%;
+  }
+  #box9 {
+    left: 47%;
+  }
+  #circle10 {
+    left: 66%;
+  }
+  #box10 {
+    left: 55%;
+  }
+  #circle11 {
+    left: 74%;
+  }
+  #box11 {
+    left: 55%;
+  }
+  #circle12 {
+    left: 80%;
+  }
+  #box12 {
+    left: 63%;
+  }
+  #circle13 {
+    left: 87%;
+  }
+  #box13 {
+    left: 75%;
+  }
+  #circle14 {
+    left: 94%;
+  }
+  #box14 {
+    left: 74%;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-  #time-line{
+  #time-line {
     width: 100%;
   }
-
-  #circle1 { left: 3%; }
-  #box1 { left: 2%;}
-
-  #circle2 { left: 10%; }
-  #box2{left:4%;}
-
-  #circle3 { left: 17%; }
-  #box3{left: 10%;}
-
-  #circle4 { left: 24%; }
-  #box4{left: 15%;}
-
-  #circle5 { left: 31%; }
-  #box5{left: 23%;}
-
-  #circle6 { left: 38%; }
-  #box6{left: 28%;}
-
-  #circle7 { left: 45%; }
-  #box7{left: 35%;}
-
-  #circle8 { left: 52%; }
-  #box8{left: 40%;}
-
-  #circle9 { left: 59%; }
-  #box9{left: 52%;}
-
-  #circle10 { left: 66%; }
-  #box10{left: 57%;}
-
-  #circle11 { left: 74%; }
-  #box11{left: 65%;}
-
-  #circle12 { left: 80%; }
-  #box12{left: 70%;}
-
-  #circle13 { left: 87%; }
-  #box13{left: 78%;}
-
-  #circle14 { left: 94%; }
-  #box14{left: 80%;}
+  #circle1 {
+    left: 3%;
+  }
+  #box1 {
+    left: 2%;
+  }
+  #circle2 {
+    left: 10%;
+  }
+  #box2 {
+    left: 4%;
+  }
+  #circle3 {
+    left: 17%;
+  }
+  #box3 {
+    left: 10%;
+  }
+  #circle4 {
+    left: 24%;
+  }
+  #box4 {
+    left: 15%;
+  }
+  #circle5 {
+    left: 31%;
+  }
+  #box5 {
+    left: 23%;
+  }
+  #circle6 {
+    left: 38%;
+  }
+  #box6 {
+    left: 28%;
+  }
+  #circle7 {
+    left: 45%;
+  }
+  #box7 {
+    left: 35%;
+  }
+  #circle8 {
+    left: 52%;
+  }
+  #box8 {
+    left: 40%;
+  }
+  #circle9 {
+    left: 59%;
+  }
+  #box9 {
+    left: 52%;
+  }
+  #circle10 {
+    left: 66%;
+  }
+  #box10 {
+    left: 57%;
+  }
+  #circle11 {
+    left: 74%;
+  }
+  #box11 {
+    left: 65%;
+  }
+  #circle12 {
+    left: 80%;
+  }
+  #box12 {
+    left: 70%;
+  }
+  #circle13 {
+    left: 87%;
+  }
+  #box13 {
+    left: 78%;
+  }
+  #circle14 {
+    left: 94%;
+  }
+  #box14 {
+    left: 80%;
+  }
 }
 
 @media screen and (min-width: 2000px) {
-
-  #circle1 { left: 15%; }
-  #box1 { left: 10%;}
-
-  #circle2 { left: 20%; }
-  #box2{left:15%;}
-
-  #circle3 { left: 25%; }
-  #box3{left: 20%;}
-
-  #circle4 { left: 30%; }
-  #box4{left: 25%;}
-
-  #circle5 { left: 35%; }
-  #box5{left: 30%;}
-
-  #circle6 { left: 40%; }
-  #box6{left: 35%;}
-
-  #circle7 { left: 45%; }
-  #box7{left: 40%;}
-
-  #circle8 { left: 50%; }
-  #box8{left: 45%;}
-
-  #circle9 { left: 55%; }
-  #box9{left: 51%;}
-
-  #circle10 { left: 60%; }
-  #box10{left: 55%;}
-
-  #circle11 { left: 65%; }
-  #box11{left: 60%;}
-
-  #circle12 { left: 70%; }
-  #box12{left: 65%;}
-
-  #circle13 { left: 75%; }
-  #box13{left: 70%;}
-
-  #circle14 { left: 80%; }
-  #box14{left: 75%;}
+  #circle1 {
+    left: 15%;
+  }
+  #box1 {
+    left: 10%;
+  }
+  #circle2 {
+    left: 20%;
+  }
+  #box2 {
+    left: 15%;
+  }
+  #circle3 {
+    left: 25%;
+  }
+  #box3 {
+    left: 20%;
+  }
+  #circle4 {
+    left: 30%;
+  }
+  #box4 {
+    left: 25%;
+  }
+  #circle5 {
+    left: 35%;
+  }
+  #box5 {
+    left: 30%;
+  }
+  #circle6 {
+    left: 40%;
+  }
+  #box6 {
+    left: 35%;
+  }
+  #circle7 {
+    left: 45%;
+  }
+  #box7 {
+    left: 40%;
+  }
+  #circle8 {
+    left: 50%;
+  }
+  #box8 {
+    left: 45%;
+  }
+  #circle9 {
+    left: 55%;
+  }
+  #box9 {
+    left: 51%;
+  }
+  #circle10 {
+    left: 60%;
+  }
+  #box10 {
+    left: 55%;
+  }
+  #circle11 {
+    left: 65%;
+  }
+  #box11 {
+    left: 60%;
+  }
+  #circle12 {
+    left: 70%;
+  }
+  #box12 {
+    left: 65%;
+  }
+  #circle13 {
+    left: 75%;
+  }
+  #box13 {
+    left: 70%;
+  }
+  #circle14 {
+    left: 80%;
+  }
+  #box14 {
+    left: 75%;
+  }
 }
-
-
 
 .time-desc {
   position: absolute;
   left: 35px;
   text-align: center;
   background-color: rgba(160, 132, 169, 1);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.time-info{
+.time-info {
   color: black;
   padding: 5px;
   text-align: center;
@@ -1072,8 +1303,6 @@ html {
   bottom: 510px;
 }
 
-
-
 /*HOVER ON CIRCLE*/
 
 #circle1:hover~#box1,
@@ -1095,8 +1324,6 @@ html {
   transition: linear 0.05s;
 }
 
-
-
 .storyContainer {
   margin: 0 auto;
   padding: 20px;
@@ -1113,7 +1340,6 @@ html {
   background-color: purple;
   overflow: hidden;
 }
-
 
 /* ORIGINS CSS end */
 
@@ -1411,7 +1637,7 @@ input[type=range]:focus {
   }
 }
 
-@media screen and (min-width: 300px) and (orientation: portrait) {
+@media screen and (min-width: 1000px) and (orientation: portrait) {
   .sepLines {
     width: 30rem;
   }
@@ -1429,6 +1655,9 @@ input[type=range]:focus {
   }
   .navigation__list {
     top: 14rem;
+  }
+  .scroll-downs {
+    display: none;
   }
 }
 
