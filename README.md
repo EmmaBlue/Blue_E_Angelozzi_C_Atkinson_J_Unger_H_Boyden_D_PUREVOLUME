@@ -2,7 +2,7 @@
 
 ![](images/purevolume-readme.png)
 
-Our two page website redesign for Pure Volume, including the home page and origin page.
+Our two page website redesign for Pure Volume, including the home page and origins page.
 
 ## Features
 
@@ -41,7 +41,7 @@ And you're done!
 ## Built With
 
 * [CSS Grid](https://cssreference.io/css-grid/)
-* [CSS Flexbox](https://cssreference.io/flexbox/) - Dependency Management
+* [CSS Flexbox](https://cssreference.io/flexbox/)
 * [Javascript](https://www.javascript.com/) - Used for custom video player
 
 ## Authors
@@ -58,5 +58,6 @@ This project is licensed under the [MIT License] (https://opensource.org/license
 
 ## Acknowledgments
 
-* Video Player Inspiration - [Northern.co][https://www.northern.co/]
+* Navigation Inspiration - [Design Canada](https://designcanada.com/)
+* Video Player Inspiration - [Northern.co](https://www.northern.co/)
 * Content Section Inspiration - [Pyoneer Magazine](https://dribbble.com/shots/2117893-Pyoneer-Blog-Magazine-Layout/attachments/384238)
