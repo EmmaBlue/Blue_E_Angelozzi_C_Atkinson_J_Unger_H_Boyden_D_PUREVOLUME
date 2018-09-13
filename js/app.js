@@ -3,7 +3,7 @@
 
   //! VARIABLES
   const bckgrdVideo = document.querySelector('.bg-video__content'),
-  videoScreen = document.querySelector('.videoScreen'), 
+  videoScreen = document.querySelector('.videoScreen'),
   closeLightbox = videoScreen.querySelector('.close-videoScreen'),
   vidPlayer = document.querySelector('#videoElement'),
   playPause = document.querySelector('.play-pause'),
@@ -14,6 +14,9 @@
   volumeBar = document.querySelector('#volumeBar'),
   playBtn = document.querySelector('#playBtn'),
   scrollMouseIcon = document.querySelector('.scroll-downs');
+  // ORIGINS PAGE VARIABLES
+  const circle = document.querySelector('#circle5'),
+  imageBox = document.querySelector('imageScreen');
 
   //! FUNCTIONS
 
@@ -91,7 +94,7 @@
     clipBar.value = 0;
   }
 
-  // Play/Pause btn 
+  // Play/Pause btn
   function togglePlay() {
     var theSVG = this.firstElementChild;
 
@@ -154,15 +157,8 @@
   }
 
 
-  //! EVENTS 
+  //! EVENTS
   window.addEventListener('load', () => {
-
-    // onLoad eent on scroll for fade effect on landing page
-    window.addEventListener('scroll', () => {
-      let intro = document.querySelector("#introPage");
-      intro.style.opacity = 1 - (1 / (window.innerHeight / window.scrollY));
-    });
-
 
     // create source video element according to screen size
     if (window.matchMedia("(max-width: 700px)").matches) {
@@ -175,6 +171,23 @@
 
   });
 
+
+
+
+
+
+
+//ORIGINS FUNCTIONS
+  function openImage() {
+    imageBox.classList.add('show-imageScreen');
+  }
+
+
+
+
+
+
+
   playBtn.addEventListener('click', (loadMovie));
   closeLightbox.addEventListener('click', closeBox);
   vidPlayer.addEventListener('ended', closeBox);
@@ -184,5 +197,11 @@
   vidPlayer.addEventListener('timeupdate', showTime);
   muteBtn.addEventListener('click', muteMe);
   volumeBar.addEventListener('change', changeVolume);
+
+
+
+
+//ORIGINS EVENT LISTENERS
+  circle.addEventListener('click', openImage());
 
 })();
