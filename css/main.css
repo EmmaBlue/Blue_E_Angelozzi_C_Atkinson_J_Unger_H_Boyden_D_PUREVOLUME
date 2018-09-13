@@ -470,6 +470,7 @@ html {
   position: relative;
 }
 
+
 .single-article:last-child {
   background-color: #ffffff;
 }
@@ -535,6 +536,8 @@ html {
   font-size: 1.2rem;
 }
 
+
+
 @media screen and (min-width: 768px) {
   #content_boxes {
     margin: 10rem;
@@ -582,6 +585,7 @@ html {
     grid-template-columns: repeat(3, minmax(150px, auto));
     grid-auto-rows: 250px;
   }
+
   .single-article {
     margin: 0 auto;
     background-color: #4C3F4C;
@@ -750,7 +754,11 @@ html {
 
 .show-imageScreen {
   display: block !important;
+
+  z-index: 20 !important;
 }
+
+
 
 .imageScreen img {
   padding-top: 20rem;
@@ -1562,6 +1570,14 @@ input[type=range]:focus {
 @media screen and (min-width: 400px) {
   #logo {
     max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .single-article {
+
+    margin: 0 auto;
   }
 }
 
